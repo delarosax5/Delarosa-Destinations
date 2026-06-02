@@ -1,0 +1,339 @@
+/* UNIVERSAL STYLING */
+
+*{
+                        margin: 0%;
+                        padding: 0%;
+                        box-sizing: border-box;
+}
+
+html {
+                        font-size: 62.5%;
+}
+
+body {
+                        font-family: "roboto" , sans-serif;
+}
+
+h1{
+                        font-size: 2.6rem;
+}
+
+li,button,label,p {
+                        font-size: 2rem;
+}
+
+h2{
+                        font-size: 4.8rem;
+}
+
+h3{
+                        font-size: 3rem;
+                        font-weight: normal;
+}
+
+h4,h5{
+                        font-size: 2.5rem;
+}
+
+a {
+                        color: white;
+                        text-decoration: none;
+}
+
+button {
+                  padding: 2rem 6rem;
+                  background: #1b7d98; 
+                  border: none;     
+                  color: white;
+                  font-size: 1.8rem;
+                  cursor: pointer;
+                  border-radius: 3rem;
+                  transition: background 0.5s ease-in-out;
+
+}
+
+button:hover {
+                        background: #1f8fae;
+}
+
+/* NAVIGATION SECTION WITH HERO */
+
+.main-head {
+                        background-color: #1b7d98;
+                        color: white;
+}
+
+nav{
+                        min-height: 10vh;
+                        display: flex;
+                        width: 90%;
+                        margin: auto;
+                        padding: 2rem;
+                        min-height: 10vh;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        
+}
+
+nav ul {
+                        display: flex;
+                        flex: 1 1 40rem;
+                        justify-content: space-around;
+                        align-items: center;
+                        list-style: none
+
+                        
+}
+
+#logo {
+                        flex: 2 1 70rem;
+                        font-family: "pattaya", sans-serif;
+                        font-weight: 400;
+}
+
+.hero{
+                        min-height: 90vh;
+                        background: url("/img/ian-dooley-DuBNA1QMpPA-unsplash.jpg");
+                        background-size: cover;
+                        background-position: cover;
+                        color: white;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+}
+
+.hero h3{
+                        padding: 5rem;
+}
+
+/* LOCATIONS SECTION */
+
+#Locations {
+                        min-height: 100vh;
+                        background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(/img/generated_image.png);
+                        background-size: cover;
+                        background-position: center;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        overflow: hidden;
+}
+
+
+.Locations-head{
+
+                        width: 90%;
+                        margin: auto;
+                        
+
+}
+
+.Locations-head h2 {
+                        padding: 1rem, 0rem;
+}
+
+.Locations-head h3 {
+                        padding: 4rem, 0rem;
+                        background: linear-gradient(#ffffff,rgb(109, 177, 255));
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        
+}
+
+
+.cloud {
+                        position: absolute;
+                        top: 0%;
+                        right: 0%;
+}
+
+
+.moving-cloud-1 {
+                        animation: cloudAnimation 4s infinite alternate ease-in-out
+}
+
+.moving-cloud-2 {
+                        top: 20%;
+                        z-index: -1;
+                        opacity: 0.5;
+                        animation: cloudAnimation 4s infinite alternate ease-in-out;
+}
+
+
+@keyframes cloudAnimation{
+                        from {
+                                                transform: translate(10%, -12%);
+                        }
+                        to {
+                                                transform: translate(0%,0%);
+                        }
+}
+
+/* BENEFITS SECTION */
+
+.benefits-head {
+                        background: #1b7d98;
+                        padding: 3rem;
+                        min-height: 30vh;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        text-align: center;
+}
+
+.benefits-head h3 {
+                   padding: 1rem;     
+}
+
+.cards {
+                        width: 100%;
+                        margin: auto;
+                        display: flex;
+                        min-height: 70vh;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(/img/travel\ mountain.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        color: white;
+;
+}
+.card {
+                       text-align: center;
+                        flex: 1 1 25rem;
+                        min-height: 40vh;
+                        margin: 2rem 5rem;
+                        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.204),0px 20px 20px rgb(0, 0,0,0.1);
+                        
+}
+.cards img {
+                        max-width: 15%;
+                        margin: 2rem;
+}
+
+.card h4, p {
+       padding: 1rem;
+}
+
+.card-icon {
+       background: #2095b5;
+}
+
+
+/* CONTACT */
+
+#contact {
+                        min-height: 100vh;
+                        background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(/img/watersplash.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+}
+
+.form-wrapper{
+       background: rgba(19, 28, 39, 0.8);
+       width: 60%;
+       color: white;
+       border-radius: 3rem;
+}
+
+.form-head {
+       text-align: center;
+       padding: 4rem;
+}
+
+.name-form, 
+.email-form {
+       padding: 3rem;
+       text-align: center;
+}
+
+.form-wrapper label {
+        margin: 0rem, 3rem;
+}
+
+.form-wrapper button {
+       width: 100%;
+       padding: 3rem;   
+       margin-top: 8rem;  
+       border-bottom-left-radius: 20px;
+       border-bottom-right-radius: 20px; 
+}
+
+.form-wrapper input {
+       padding: 1rem 3rem;
+}
+
+
+footer {
+       color: white;
+       background: rgba(19, 28, 39, 1);
+
+}
+
+.footer-wrapper {
+       display: flex;
+       padding: 3rem;
+       width: 100%;
+       margin: auto;
+       align-items: center;
+       min-height: 10vh;
+       flex-wrap: wrap; 
+}
+
+footer h5 {
+       flex: 1 1 40rem;
+}
+
+footer ul {
+       display: flex;
+       list-style: none;
+       flex: 1 1 40rem;
+       justify-content: space-around;
+       align-items: center;
+      
+}
+
+footer img {
+       
+              filter: brightness(0) invert(1);  
+}
+
+
+
+
+/* MEDIA SECTION */
+
+@media screen and (max-width: 932px){
+                        html{
+                                                font-size: 45%;
+                        }
+                        nav{
+                               text-align: center;                
+                        }
+                        #logo {
+                                                padding: 2rem;
+                        }
+                        .cloud {
+                                                height: 40rem;
+                        }
+
+                        footer {
+                            text-align: center;
+                        }
+
+                        footer h5 {
+                            padding-bottom: 3rem;
+                        }
+                        .form-wrapper {
+                            width: 100%;
+                     }
+}
